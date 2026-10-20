@@ -1,0 +1,56 @@
+{
+    "Légumes": [
+        "Ail", "Artichaut", "Asperge", "Aubergine", "Betterave", "Brocoli",
+        "Carotte", "Céleri", "Champignon", "Chou blanc", "Chou de Bruxelles",
+        "Chou-fleur", "Concombre", "Courge butternut", "Courgette", "Échalote",
+        "Endive", "Épinard", "Fenouil", "Haricot vert", "Laitue", "Navet",
+        "Oignon", "Panais", "Patate douce", "Petit pois", "Poireau",
+        "Poivron", "Potiron", "Radis", "Roquette", "Tomate"
+    ],
+    "Fruits": [
+        "Abricot", "Ananas", "Avocat", "Banane", "Cerise", "Citron",
+        "Citron vert", "Clémentine", "Fraise", "Framboise", "Kiwi", "Mangue",
+        "Melon", "Myrtille", "Orange", "Pamplemousse", "Pêche", "Poire",
+        "Pomme", "Prune", "Raisin"
+    ],
+    "Viandes": [
+        "Agneau", "Bacon", "Bœuf haché", "Canard", "Chorizo", "Dinde",
+        "Escalope de veau", "Jambon blanc", "Lardons", "Merguez", "Porc",
+        "Poulet", "Rôti de bœuf", "Saucisse", "Steak de bœuf"
+    ],
+    "Poissons et fruits de mer": [
+        "Cabillaud", "Calamar", "Colin", "Crevette", "Moule", "Sardine",
+        "Saumon", "Saumon fumé", "Sole", "Thon", "Truite"
+    ],
+    "Œufs et produits laitiers": [
+        "Beurre", "Comté", "Crème fraîche", "Emmental", "Feta", "Fromage blanc",
+        "Fromage de chèvre", "Lait", "Mozzarella", "Œuf", "Parmesan",
+        "Ricotta", "Yaourt nature"
+    ],
+    "Féculents": [
+        "Boulgour", "Couscous", "Farine", "Flocons d'avoine", "Gnocchi",
+        "Pain", "Pain de mie", "Pâtes", "Pomme de terre", "Quinoa",
+        "Riz basmati", "Riz complet", "Semoule", "Tortilla"
+    ],
+    "Légumineuses": [
+        "Haricot blanc", "Haricot rouge", "Lentille corail", "Lentille verte",
+        "Pois cassé", "Pois chiche"
+    ],
+    "Protéines végétales": [
+        "Seitan", "Tempeh", "Tofu", "Tofu fumé"
+    ],
+    "Fruits secs et graines": [
+        "Amande", "Cacahuète", "Graine de chia", "Graine de courge",
+        "Graine de sésame", "Noisette", "Noix", "Noix de cajou", "Raisin sec"
+    ],
+    "Herbes et épices": [
+        "Basilic", "Cannelle", "Ciboulette", "Coriandre", "Cumin", "Curcuma",
+        "Curry", "Gingembre", "Herbes de Provence", "Menthe", "Paprika",
+        "Persil", "Piment", "Poivre", "Romarin", "Thym"
+    ],
+    "Condiments et sauces": [
+        "Concentré de tomate", "Coulis de tomate", "Huile d'olive",
+        "Huile de tournesol", "Ketchup", "Lait de coco", "Mayonnaise", "Miel",
+        "Moutarde", "Pesto", "Sauce soja", "Vinaigre balsamique"
+    ]
+}
