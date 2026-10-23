@@ -14,6 +14,9 @@ $dotenv->load();
 $apiKey = $_ENV['ANTHROPIC_API_KEY'];
 $model  = $_ENV['ANTHROPIC_MODEL'];
 
+# Listes pour la fréquence des repas à générer
+$days = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
+$moments = ['Midi', 'Soir'];
 
 
 
