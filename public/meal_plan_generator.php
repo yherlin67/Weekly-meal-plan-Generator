@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_METHOD'] != 'POST')
     header("Location: index.php");
     exit;
 }
-if(empty($_POST['ingredients']) || empty($_POST['nb_pers']) || empty($_POST['mealsSlot']))
+if(empty($_POST['ingredients']) || empty($_POST['nb_pers']) || empty($_POST['mealsSlot']) || empty($_POST['weekBudget']))
 {
     header("Location: index.php");
     exit;
@@ -30,11 +30,14 @@ $ingredients = $_POST['ingredients'];
 # Créneaux pour lesquels on va générer des repas (exemple, Mardi soir, Mercredi midi...)
 $mealsSlot = $_POST['mealsSlot'];
 
+# Budget course de la semaine (pour rajouter des ingrédients non renseignés par l'utilisateur)
+$weekBudget = $_POST['weekBudget'];
+
 #Création du prompt pour le rôle system (fonction dans prompt.php)
 $systemPrompt = buildSystemPrompt();
 
 #Création du prompt pour le rôle user (fonction dans prompt.php)
-$userPrompt = buildUserPrompt($nbPeople,$ingredients,$mealsSlot);
+$userPrompt = buildUserPrompt($nbPeople,$ingredients,$mealsSlot,$weekBudget);
 
 # Instanciation d'un client Guzzle pour faire appel à l'API
 # Timeout car le client doit attendre la génération du menu
@@ -69,14 +72,15 @@ $requestBody = [
                                 'moment'      => ['type' => 'string', 'enum' => $moments],
                                 'name'        => ['type' => 'string'],
                                 'ingredients' => ['type' => 'array', 'items' => ['type' => 'string']],
-                                'steps'       => ['type' => 'array', 'items' => ['type' => 'string']],
+                                'steps'       => ['type' => 'array', 'items' => ['type' => 'string']]
                             ],
                             'required'             => ['day', 'moment', 'name', 'ingredients', 'steps'],
                             'additionalProperties' => false,
                         ],
                     ],
+                    'purchases'   => ['type' => 'array', 'items' => ['type' => 'string']],
                 ],
-                'required'             => ['meals'],
+                'required'             => ['meals','purchases'],
                 'additionalProperties' => false,
             ],
         ],
